@@ -1,0 +1,349 @@
+
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы */
+      display: flex; /* Делаем body flex-контейнером */
+    flex-direction: column; /* Устанавливаем направление по колонке */
+}
+
+body {   
+  margin: 0;
+  padding: 0; 
+   flex: 1; /* Позволяем body занимать все доступное пространство */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+button, input, select {
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header, .footer {
+  max-width: 1440px; 
+  margin: 0 auto;
+  width: 100%; 
+  display: flex;  
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+.header {
+height: 93px;
+justify-content:space-between;
+padding: 25px 60px 25px 60px;
+background-color: #FFFFFF;
+  font-size: 14px;
+}
+.loader {
+    border: 4px solid rgba(2, 148, 145, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #fff; /* Цвет верхней части спиннера */
+    width: 24px; /* Размер спиннера */
+    height: 24px; /* Размер спиннера */
+    animation: spin 1s linear infinite; /* Анимация вращения */
+    margin-left: 50px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.header__logo{
+    width: 141px;
+    height: 93px;
+}
+.header__nav {
+    display: flex;  
+    gap:49px;
+    font-size: 14px;  
+}
+.header__nav a,
+.header__nav Link { 
+    text-decoration: none; 
+    color: inherit;
+}
+.header__nav a:hover,
+.header__nav Link:hover { 
+    color: #029491; 
+    text-decoration: underline; 
+}
+.header__auth {
+    display: flex; 
+    align-items: center; 
+    max-width: 251px; 
+    height: 26px; 
+    margin-right: 10px;
+   
+}
+.header__auth-visibleblock{
+     display: flex; 
+    align-items: center; 
+}
+
+.header__auth a {
+    text-decoration: none;
+    color: black;    
+}
+.header__auth a:hover,
+.header__auth Link:hover { 
+    color: #029491; 
+    text-decoration: underline; 
+}
+
+.header__auth .divider {
+    width: 2px; 
+    height: 26px; 
+    background-color: #029491; 
+    color: transparent;
+    margin: 0 20px; /* Отступы слева и справа от линии */
+}
+
+.header__auth .login-button {
+    background-color: #7CE3E1;    
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 12px 5px 12px;
+}
+.header__auth .login-button:hover {
+    background-color:#51d6d4;  
+}
+
+.main {
+min-height: 300px;
+max-width: 1440px; 
+margin: 0 auto;
+width: 100%; 
+display: flex;  
+justify-content:flex-start;
+align-items: center; /* Центрирование по вертикали */ 
+flex: 1 0 auto; 
+}
+.footer {
+    justify-content:space-between;
+    background-color: #029491;
+    height: 137px;
+    padding: 25px 45px 25px 60px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    width: 100%; 
+}
+.footer__logo {
+    width: 141px;
+    height: 141px;
+}
+.footer__address {
+    width: 199px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: right;
+}
+.footer__copyright{
+margin-top: 21px;
+font-size: 12px; 
+}
+.user-avatar {
+    width: 32px;
+    height: 32px;
+}
+.header__user{
+    height: 32px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    gap: 100px;
+    align-items:center;
+}
+.LogoutButton{
+    font-size: 10px;  
+    margin-right: 5px;
+    float: right;
+    color: #949494;
+}
+.header__account-info {
+width:175px;
+Height:63px;
+font-size: 10px;
+padding: 14px 10px 14px 24px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 7px;
+background-color: rgba(217, 217, 217, 0.3);
+border-radius: 5px;
+color: #727272;
+}
+.accountInfo__used-companies{
+font-size: 14px;
+font-weight: 700;
+margin-left: 5px;
+}
+.accountInfo__company-limit{
+color: #8AC540;
+font-size: 14px;
+font-weight: 700;
+margin-left: 5px;
+}
+.header__login-menu{
+    display: flex;    
+    justify-content: flex-start;
+     
+    max-width: 111px;    
+    height: 32px;
+}
+.user-avatar {
+    margin-left: auto;    
+}
+.user-avatar__span {
+    position: relative;
+}
+.burger__span{
+    display: none;
+    position: relative;
+}
+
+.burger-menu {
+    position: absolute; 
+    top: 0; 
+    left: 0;     
+    width: 375px; 
+    height: 491px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: #029491;
+   gap:20px
+}
+
+.close-button {
+    cursor: pointer; /* Курсор в виде указателя */
+    align-self: flex-end; /* Выровнять вправо */
+}
+.burger-content__block{
+    display: flex; 
+    flex-direction: column; 
+    justify-content:space-around;
+    align-items:center;   
+    flex-grow: 1;   
+}
+
+@media screen and (max-width: 1100px) {
+.header__user{ 
+   gap: 40px;
+}
+
+}
+@media screen and (max-width: 950px) {
+.header__user{ 
+   gap: 15px;
+}
+.header__nav {     
+    gap:25px;   
+    margin-left: 5%; 
+}
+.header {
+padding: 25px 0px 25px 30px;
+}
+}
+@media screen and (max-width: 790px) {
+.burger__span{
+    display:inline;
+    position: relative;
+    cursor: pointer;
+    margin-right: auto;
+}
+.user-avatar__span{
+    display: none;
+}
+.login-menu__logout-block{
+    display: none;
+}
+.header__nav {     
+    display: none;
+}
+.header__auth-visibleblock{
+     display: none;
+}
+.burger-menu .header__auth-visibleblock{
+    display:flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;  
+   
+}
+.burger-menu .login-button {
+    padding: 12px 117px;
+}
+.burger-menu .register-button{
+    color: #FFFFFF;
+}
+.burger-menu .header__nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    width: 109px;   
+    text-align: center;
+   
+}
+.burger-menu .login-menu__logout-block{
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+   justify-content: center;
+   min-width:80px;
+}
+.burger-menu .user-avatar__span{
+display: flex;
+}
+.header {
+padding: 25px 30px 25px 30px;
+}
+.header__user{ 
+   gap: 30px;
+   max-width: 250px;
+}
+.header{
+   justify-content: space-between;
+}
+.header__login-menu{
+    max-width: 30px;
+}
+}
+@media screen and (max-width: 470px) {
+.header__account-info {
+width:132px;
+font-size: 8px;
+padding: 14px 0px 14px 4px;
+margin-left: 10px;
+}
+.header__user{ 
+   gap: 20px;
+   max-width: 250px;
+}
+.header {
+padding: 25px 0px 25px 10px;
+}
+}

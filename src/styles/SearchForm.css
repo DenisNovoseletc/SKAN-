@@ -1,0 +1,172 @@
+.search-form {
+  width: 872px;
+  height: 543px;
+  display: flex;
+  justify-content:space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 32px;
+  padding-right: 39px;
+  padding-top: 37px;
+  padding-left: 44px;
+  margin-top: 30px;
+  margin-bottom: 300px;  
+}
+.search-form__custom-form{ 
+  display: flex;
+  justify-content:space-between; 
+}
+.search-form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.search-form__label {
+  margin-bottom: 20px;  
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+
+.search-form__input,
+.search-form__select {
+  width: 242px;
+  height: 43px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 8px;
+  color: #C7C7C7;
+}
+
+.search-form__date-range {
+  display: flex;
+  gap: 10px;
+}
+
+.search-form__input--date {
+  width: 176px;
+}
+
+.search-form__checkboxes {
+    width: 406px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+
+.search-form__checkbox {
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+}
+
+.search-form__checkbox input[type="checkbox"] {
+    width: 20px; /* Ширина чекбокса */
+    height: 20px; /* Высота чекбокса */
+    margin-right: 17px; /* Отступ между текстом и чекбоксом */
+}
+
+.search-form__checkbox input[type="checkbox"]:checked {
+    accent-color: green; /* Цвет галочки при выборе (для современных браузеров) */
+}
+
+.search-form__button {
+  width: 305px;
+  height: 59px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5970FF;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: auto; 
+  margin-left: auto;   
+  margin-bottom: 10px;
+  opacity: 50%;
+
+}
+.search-form__inform {
+    font-size: 14px;
+    color: #949494;
+    margin-left: auto;
+}
+.search-form__button--disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+.search-form__button {
+  opacity: 0.5; /* Неактивная кнопка */
+  cursor: not-allowed;
+}
+
+.search-form__button.active {
+  opacity: 1; /* Активная кнопка */
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+  font-size: 0.875em; /* Уменьшаем размер шрифта для сообщений об ошибках */
+  margin-top: 0.25em; /* Добавляем немного отступа сверху */
+}
+@media screen and (max-width: 1000px) {
+  .search-form__checkbox {
+ display: none;
+}
+.search-form__checkboxes {
+    width: 306px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    position: absolute;
+    top:900px;
+    
+}
+.search-form {
+  width: 375px;
+  height: 688px;
+  display: flex;
+  justify-content:space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 32px;
+  padding-right: 39px;
+  padding-top: 14px;
+  padding-left: 14px;
+  margin-top: 30px;
+  margin-bottom: 300px;  
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.search-form__custom-form{ 
+  display: flex;
+  justify-content:space-between; 
+}
+.search-form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.search-form__input--date {
+  width: 335px;
+}
+.search-form__date-range {
+  display: flex;
+  gap: 0px;
+  width: 335px;
+  flex-wrap: wrap;
+}
+.search-form__button,
+.search-form__input,
+.search-form__select {
+  width: 335px; 
+}
+}
+@media screen and (max-width: 450px) {
+ .search-form {
+  margin-bottom: 550px;
+ }
+}

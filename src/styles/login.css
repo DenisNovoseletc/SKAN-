@@ -1,0 +1,252 @@
+.login__container {
+    min-height: 672px;
+}
+.subscription {
+    display: flex; 
+    flex-direction:row;
+    width: 100%;
+    position: relative;
+    padding: 69px 141px 80px 60px;
+    gap:30px;
+}
+.subscription__title {
+    width: 759px; 
+    font-family: 'Ferry', sans-serif; 
+    font-weight: 900; 
+    font-size: 40px; 
+    margin: 0; 
+    height: 144px; 
+}
+.subscription__content {
+    display: flex; 
+    margin-top: 20px; 
+}
+.subscription__image {
+    width: 321px; 
+    height: 342px; 
+    display: block;     
+    position: absolute;
+    top: 230px; 
+    left: 165px;     
+}
+.subscription__placeholder {
+    width: 429px; 
+    height: 523px; 
+    position: relative; 
+    padding: 20px; 
+    box-shadow: 0px 0px 20px 0px #00000026;
+    border-radius: 10px;
+    font-size: 14px;
+    
+}
+.auth__container {
+  display: flex;
+  justify-content: center; 
+  gap: 15px; 
+  font-family: 'Inter', sans-serif;
+}
+.auth__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем кнопку и линию по горизонтали */
+}
+.auth__button {
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  color: #C7C7C7;
+}
+.auth__underline {
+  height: 2px;
+  background-color: #C7C7C7;
+  margin-top: 8px;  
+  margin-bottom: 40px;
+}
+/* Фиксированная ширина подчеркивания для каждой кнопки */
+.auth__underline--login {
+  width: 151px;
+}
+.auth__underline--register {
+  width: 213px;
+}
+/* Эффект наведения: меняем цвет текста и линии */
+.auth__button:hover + .auth__underline {
+  background-color: #029491;
+}
+.auth__button:hover {
+  color: #029491;
+}
+.auth__button.active {
+  color: #029491; 
+}
+
+.auth__underline.active {
+  background-color: #029491; 
+}
+
+.subscription__form {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    width: 100%; /* Ширина формы */
+}
+
+.subscription__label {
+    margin-bottom: 15px; /* Отступ между текстом и полем ввода */
+    font-size: 16px; /* Размер шрифта для меток */
+    color: #949494;
+}
+.subscription__input {
+    width: 379px; /* Ширина полей ввода */
+    height: 43px; /* Высота полей ввода */
+    border-width: 1px; /* Толщина границы */
+    border-style: solid; /* Стиль границы */
+    border-color: #C7C7C7; /* Цвет границы */
+    border-radius: 5px; /* Радиус скругления углов */
+    margin-bottom: 20px; /* Отступ между полями ввода */
+    padding: 10px; /* Отступ внутри полей ввода */
+    box-sizing: border-box; /* Учитывает границы и отступы в ширине и высоте */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Тень для поля ввода */
+}
+
+.subscription__button {
+    width: 379px; /* Ширина кнопки */
+    height: 59px; /* Высота кнопки */
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #5970FF; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Указатель курсора при наведении */
+    margin-top: 20px; /* Отступ сверху для кнопки */
+    opacity: 50%;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.subscription__href{
+  text-align: center;
+  color: #5970FF;  
+}
+.social-login {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение текста и изображений */
+    align-items: flex-start; /* Выравнивание по левому краю */
+}
+
+.social-login__text {
+    margin-bottom: 15px; /* Отступ между текстом и изображениями */
+    font-size: 16px; /* Размер шрифта для текста */
+    color: #949494;
+}
+
+.social-login__icons {
+    display: flex; /* Горизонтальное расположение изображений */
+    gap: 10px; /* Отступ между изображениями */
+}
+
+.social-icon {
+    width: 96px; /* Ширина иконок */
+    height: 31px; /* Высота иконок */
+    cursor: pointer;
+}
+.placeholder__image {
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 92px;
+  top: -55px; 
+  left: -50px;    
+}
+.subscription__button {
+    background-color: #5970FF; /* Цвет по умолчанию */
+    color: #fff; /* Цвет текста */
+    transition: background-color 0.3s ease; /* Плавный переход */
+    opacity: 50%;
+}
+
+.subscription__button.active {
+    background-color: #5970FF; /* Яркий цвет при активном состоянии */
+     opacity:100;
+}
+@media screen and (max-width: 1300px) {
+.subscription__title {
+    width: 650px;
+    font-size: 30px; 
+    margin-right: 5%; 
+}
+}
+@media screen and (max-width: 1200px) {
+.subscription__title {
+    width: 500px;
+    font-size: 22px; 
+    margin-right: 2%; 
+}
+
+}
+@media screen and (max-width: 1025px) {
+  .subscription__placeholder {
+    width: 335px;
+    height: 504px;    
+    padding: 15px;      
+}
+.subscription {  
+    padding: 45px 20px 60px 20px;   
+}
+.subscription__input {
+    width: 305px; /* Ширина полей ввода */
+  
+}
+.subscription__button {
+  width: 305px;
+}
+.auth__underline--login {
+  width: 103px;
+}
+.auth__underline--register {
+  width: 182px;
+}
+.subscription__image {  
+    left: 15px;     
+}
+}
+@media screen and (max-width: 900px) {
+.subscription__title {
+    width: 383px;
+    font-size: 22px; 
+    margin-right: 2%; 
+}
+}
+@media screen and (max-width: 783px) {
+.subscription__title {
+    width: 320px;
+    font-size: 22px; 
+    margin-right: 0; 
+}
+}
+@media screen and (max-width: 725px) {
+  .subscription {    
+    flex-direction:column;
+    
+}
+.subscription__image {  
+    left: 25px;   
+    top:770px;  
+}
+  .subscription__placeholder {
+    margin-bottom: 450px; 
+    margin-top: 10px;
+}
+.placeholder__image {
+  position: absolute;
+  display: block;
+  width: 75px;
+  height: 92px;
+  top: -80px; 
+  left:85px;    
+  
+}
+
+}

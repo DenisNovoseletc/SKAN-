@@ -1,0 +1,147 @@
+.home__title {  
+  font-family: 'Ferry', sans-serif; 
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.home_titleh2{
+     font-family: 'Ferry', sans-serif; 
+  font-weight: 900;
+  font-size: 45px;
+  margin-bottom: 70px;
+  margin-top: 199px;
+}
+.home__container {
+  
+    padding: 69px 141px 80px 60px;
+}
+.home__text {
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+.button__search {
+    background-color: #5970FF;
+    Width:335px;
+    Height:59px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 22px;    
+}
+.button__search:hover {
+    background-color: #1837ff;
+}
+
+.home__image1{
+    Width:629px;
+    Height:593px;
+    position: absolute;
+      top: -35px; 
+  left: 700px;   
+  display: block;
+}
+.home__image2 {
+Width:1307px;
+Height:575px;
+margin-bottom: 70px;
+}
+/* Медиазапросы для адаптивности */
+@media screen and (max-width: 1250px) {
+.home__image1{
+top: -35px; 
+  left: 600px; 
+  Width:472px;
+  Height:444px;
+}
+}
+@media screen and (max-width: 1100px) {
+
+.home__title { 
+  font-size: 45px;
+}
+.home__image1{
+top: -35px; 
+  left: 400px; 
+  Width:472px;
+  Height:444px;
+}
+.home__text {
+    font-size: 18px;
+    margin-bottom: 70px;
+    max-width: 350px;
+}
+}
+/*iPad Pro 12.9" - 1*/
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 975px) {
+
+}
+@media screen and (max-width: 850px) {
+
+}
+@media screen and (max-width: 769px) {
+.home_titleh2--carousel {
+  margin-top: 400px;
+}
+}
+/*iPad mini - 2*/
+@media screen and (max-width: 768px) {
+.home__image2 {
+Width:891px;
+Height:392px;
+margin-bottom: 70px;
+}
+
+.home__image1{
+top: 365px; 
+left:0;  
+  Width:347px;
+  Height:342px;
+}
+ .home__title {    
+  font-size: 28px; 
+}
+.home_titleh2 { 
+  font-size: 28px;
+}
+}
+@media (max-width: 510px) {
+  .home__title {    
+  font-size: 28px;  
+}
+
+.home__image1{
+top: 385px; 
+left:0;
+  
+  Width:347px;
+  Height:342px;
+}
+.home_titleh2{
+  font-size: 28px;
+}
+.home_titleh2--carousel {
+  max-width: 280px;
+}
+.home__text {
+    font-size: 18px;
+    max-width: 327px;
+}
+}
+
+/*iPhone 11 Pro Max - 2*/
+@media (max-width: 414px) {
+  .home__container {
+  
+    padding: 69px 20px 80px 20px;
+}
+
+}
+/*iPhone SE - 1*/
+@media (max-width: 320px) {
+
+}
+
+ 

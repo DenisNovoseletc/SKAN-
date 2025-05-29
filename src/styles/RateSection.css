@@ -1,0 +1,228 @@
+.container__rate {
+Width:1320px;
+height: 540px;
+display: flex;
+flex-direction: row;
+gap:38px;
+
+}
+
+.rate__card {
+Width:415px;
+Height:540px;
+background-color:#FFFFFF;
+border-radius: 10px;
+color: #000000; /* Цвет текста */
+display: flex;
+flex-direction: column;
+ justify-content: space-between; 
+box-shadow: 0px 0px 20px 0px #00000033;
+}
+.rate__header.pro {
+background-color:#7CE3E1;
+}
+.rate__header.bussines{
+background-color:#000000;
+color: #FFFFFF;
+}
+
+.rate__card.beginner.highlight{
+border: 2px solid #FFB64F;
+}
+.rate__card.pro.highlight{
+border: 2px solid #7CE3E1;
+}
+.rate__card.bussines.highlight{
+border: 2px solid #000000;
+}
+.rate__header {
+    height: 132px;
+    display: flex;
+    flex-direction: column;       
+    background-color: #FFB64F;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    padding: 30px;
+    position: relative;
+
+}
+.rate__title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;    
+}
+.rate__header-text{
+    font-size: 18px;
+}
+.rate1Svg{
+Width:92px;
+Height:83px;
+position: absolute;
+top: 12px;
+right: 10px;  
+}
+.rate2Svg{
+ Width:93.76px;
+Height:103.97px; 
+position: absolute;
+top: 12px;
+right: 10px;  
+}
+.rate3Svg{
+Width:96px;
+Height:80.09px;
+position: absolute;
+top: 20px;
+right: 10px;  
+}
+
+.rate__price {
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+.rate__old-price {
+    text-decoration: line-through; /* Зачеркнутый текст */
+    font-size: 25px;
+    margin-left: 15px;
+    opacity: 50%;
+}
+
+.rate__installment {
+    font-size: 17px;
+    color: #000000; /* Цвет для рассрочки */
+}
+
+.rate__features {
+    margin-top: 20px; /* Отступ сверху для списка тарифов */
+}
+
+.rate__feature {
+    display: flex;
+    align-items: center; /* Центрирование иконки и текста */
+    margin: 10px 0; /* Отступы между пунктами */
+}
+
+.rate__check-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+.rate__main {
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 408px;
+}
+.button__rate{
+    background-color: #5970FF;
+    Width:355px;
+    Height:59px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-top: auto; 
+    
+}
+.rate__badge{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 14px;    
+    padding: 4px 13px;
+    background-color: #3BA5E0;
+    color:#FFFFFF;
+    border-radius: 10px;    
+}
+.button__rate--advanced {
+    background-color: #D2D2D2; /* Цвет для Advanced */
+    color: #000000;
+}
+
+.button__rate--default {
+    background-color: #5970FF; /* Цвет для остальных тарифов */
+    color: #FFFFFF;
+}
+.rate__features-tittle{
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+@media screen and (max-width: 1382px) {
+.container__rate {
+    width: 100%; /* Задаем ширину 100% */
+    max-width: 1320px; /* Ограничиваем максимальную ширину */  
+    flex-wrap: wrap; /* Позволяет карточкам переноситься */
+    justify-content: center; /* Центрируем карточки */
+    padding-right: 20%;
+    margin-bottom: 600px;
+}
+
+.rate__card {
+    flex: 1 1 300px; /* Позволяем карточкам занимать минимум 300px, но они могут расширяться */
+    max-width: 415px; /* Ограничиваем максимальную ширину карточек */
+    height: 540px; 
+    justify-content: space-between;      
+}
+}
+@media screen and (max-width: 1100px) {
+.container__rate {    
+    padding-right: 32%;   
+}
+}
+@media screen and (max-width: 975px) {
+.container__rate {    
+    padding-right: 40%;   
+    margin-bottom: 1200px;
+}
+}
+@media screen and (max-width: 875px) {
+    .container__rate {    
+    padding-right: 50%;   
+    
+}
+}
+@media screen and (max-width: 740px) {
+    .container__rate {    
+    padding-right: 60%;   
+    
+}
+}
+@media screen and (max-width: 620px) {
+    .container__rate {    
+      justify-content: flex-start;     
+}
+}
+@media screen and (max-width: 510px) {
+.container__rate {   
+      
+    justify-content: flex-start;  
+}
+
+.rate__card {   
+    max-width: 335px;            
+}
+.button__rate{    
+    Width:286px;
+    min-height:59px;
+    max-height:59px;    
+    font-size: 18px;
+    margin-top: auto;           
+}
+.rate3Svg{
+Width:76px;
+Height:60.09px;
+top: 5px;
+}
+.rate__title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;    
+}
+}
+@media screen and (max-width: 510px) {
+
+}
