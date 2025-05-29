@@ -1,24 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0477a80.css",
+    "main.css": "/static/css/main.b5248a92.css",
     "main.js": "/static/js/main.26c2a8be.js",
-    "static/media/Inter-Medium.eot": "/static/media/Inter-Medium.bc3a3377aaae167b0a07.eot",
-    "static/media/Inter-Medium.ttf": "/static/media/Inter-Medium.7682fdab91479338a4d5.ttf",
-    "static/media/Inter-Regular.eot": "/static/media/Inter-Regular.f5b04bf996cdaa04b4ea.eot",
-    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.991468dd4e43f260e6a4.ttf",
-    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.44e343ff76a98508d309.woff",
-    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.0d6f7c99e635f1fec4c9.woff",
-    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.01f03178adde434fc9fa.woff2",
-    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.bd097ceff83f90802a12.woff2",
-    "static/media/Ferry-Black.eot": "/static/media/Ferry-Black.49a7388dcb2ce51cda59.eot",
-    "static/media/Ferry-Black.ttf": "/static/media/Ferry-Black.5360f215b842ff11440a.ttf",
-    "static/media/Ferry-Black.woff": "/static/media/Ferry-Black.fc929522c5bc436a4ca3.woff",
     "index.html": "/index.html",
-    "main.d0477a80.css.map": "/static/css/main.d0477a80.css.map",
+    "main.b5248a92.css.map": "/static/css/main.b5248a92.css.map",
     "main.26c2a8be.js.map": "/static/js/main.26c2a8be.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0477a80.css",
+    "static/css/main.b5248a92.css",
     "static/js/main.26c2a8be.js"
   ]
 }
